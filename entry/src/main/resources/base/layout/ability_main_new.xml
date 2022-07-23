@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:new_text"
+        ohos:width="320fp"
+        ohos:height="match_content"
+        ohos:multiple_lines="true"
+        ohos:text="我是 NewAbilitySlice。麻烦看看标题，请告诉我现在在哪个Page呢？"
+        ohos:text_alignment="center"
+        ohos:text_size="20fp"
+        ohos:above="$+id:second_back_first"
+        ohos:bottom_margin="50vp"/>
+
+    <Button
+        ohos:id="$+id:new_to_main"
+        ohos:width="260vp"
+        ohos:height="45vp"
+        ohos:text="回到MainAbilitySlice"
+        ohos:multiple_lines="true"
+        ohos:text_size="20fp"
+        ohos:bottom_margin="20vp"
+        ohos:center_in_parent="true"
+        ohos:background_element="$graphic:background_ability_main"/>
+
+</DirectionalLayout>
