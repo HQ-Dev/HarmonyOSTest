@@ -22,7 +22,7 @@ public class MainAbilitySlice extends AbilitySlice {
 
         // start entering the SecondAbility Page
         Component enterSecondAbilityButton = findComponentById(ResourceTable.Id_enter_second);
-        enterNewAbilitySliceButton.setClickedListener(listener -> startEnterSecondAbility());
+        enterSecondAbilityButton.setClickedListener(listener -> startEnterSecondAbility());
 
         backValueText = (Text) findComponentById(ResourceTable.Id_main_text);
     }
@@ -35,5 +35,14 @@ public class MainAbilitySlice extends AbilitySlice {
     @Override
     public void onForeground(Intent intent) {
         super.onForeground(intent);
+    }
+
+    @Override
+    protected void onResult(int requestCode, Intent resultIntent) {
+        if (requestCode != 0 || resultIntent == null) {
+            return;
+        }
+        String result = resultIntent.getStringParam("key");
+        backValueText.setText(result);
     }
 }
