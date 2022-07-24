@@ -10,4 +10,12 @@ public class SecondAbility extends Ability {
         super.onStart(intent);
         super.setMainRoute(SecondAbilitySlice.class.getName());
     }
+
+    @Override
+    protected void onActive() {
+        super.onActive();
+        Intent intent = new Intent();
+        intent.setParam("key","我从SecondAbility跳回来啦");
+        setResult(0,intent);
+    }
 }

@@ -3,6 +3,7 @@ package com.example.abilityintent.slice;
 import com.example.abilityintent.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
+import ohos.aafwk.content.Operation;
 import ohos.agp.components.Component;
 import ohos.agp.components.Text;
 
@@ -43,6 +44,29 @@ public class MainAbilitySlice extends AbilitySlice {
             return;
         }
         String result = resultIntent.getStringParam("key");
+        backValueText.setText(result);
+    }
+
+    /**
+     * Explicit Startup
+     */
+    private void startEnterSecondAbility() {
+        Intent intent = new Intent();
+        Operation operation = new Intent.OperationBuilder().withDeviceId("")
+                .withBundleName(getBundleName())
+                .withAbilityName("com.example.abilityintent.SecondAbility")
+                .build();
+        intent.setOperation(operation);
+        intent.setParam("key","我从MainAbility进到了SecondAbility");
+        startAbilityForResult(intent,1);
+    }
+
+    @Override
+    protected void onAbilityResult(int requestCode, int resultCode, Intent resultData) {
+        if (resultCode != 0 || resultData == null) {
+            return;
+        }
+        String result = resultData.getStringParam("key");
         backValueText.setText(result);
     }
 }
