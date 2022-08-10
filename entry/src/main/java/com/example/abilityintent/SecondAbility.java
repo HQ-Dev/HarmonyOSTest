@@ -15,7 +15,7 @@ public class SecondAbility extends Ability {
     protected void onActive() {
         super.onActive();
         Intent intent = new Intent();
-        intent.setParam("key","我从SecondAbility跳回来啦");
+        intent.setParam("key","我从储蓄罐的自我介绍中跳回来啦");
         setResult(0,intent);
     }
 }

@@ -21,7 +21,7 @@ public class NewAbilitySlice extends AbilitySlice {
         super.onActive();
 
         Intent intent = new Intent();
-        intent.setParam("key","我从NewAbilitySlice跳回来咯");
+        intent.setParam("key","我从储蓄罐里跳出来了");
         setResult(intent);
     }
 

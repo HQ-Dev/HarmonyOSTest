@@ -28,4 +28,17 @@
         ohos:center_in_parent="true"
         ohos:background_element="$graphic:background_ability_main"/>
 
+    <Button
+        ohos:id="$+id:create_an_new_account"
+        ohos:width="260vp"
+        ohos:height="45vp"
+        ohos:text="创建一个新账号"
+        ohos:multiple_lines="true"
+        ohos:text_size="20fp"
+        ohos:bottom_margin="20vp"
+        ohos:center_in_parent="true"
+        ohos:background_element="$graphic:background_ability_main"/>
+
+
+
 </DirectionalLayout>

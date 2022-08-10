@@ -8,7 +8,7 @@
 
     <Text
         ohos:id="$+id:main_text"
-        ohos:text="嗨，我是 MainAbilitySlice，看标题就知道我在哪个Page啦"
+        ohos:text="嗨，我是一款记账软件"
         ohos:width="320fp"
         ohos:height="match_content"
         ohos:text_alignment="center"
@@ -21,7 +21,7 @@
         ohos:id="$+id:enter_newAbilitySlice"
         ohos:width="260vp"
         ohos:height="45vp"
-        ohos:text="导航到 NewAbilitySlice"
+        ohos:text="进入我的储蓄罐..."
         ohos:multiple_lines="true"
         ohos:text_size="20fp"
         ohos:bottom_margin="20vp"
@@ -32,7 +32,7 @@
         ohos:id="$+id:enter_second"
         ohos:width="260vp"
         ohos:height="45vp"
-        ohos:text="导航到 SecondAbility"
+        ohos:text="储蓄罐的自我介绍"
         ohos:multiple_lines="true"
         ohos:text_size="20fp"
         ohos:bottom_margin="20vp"
